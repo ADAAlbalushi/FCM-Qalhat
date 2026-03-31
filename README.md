@@ -223,8 +223,8 @@ See `requirements.txt` for the full pinned list.
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@article{ADAAlbalushi2026FCMQalhat,
-  title   = title: "Fuzzy Cognitive Mapping as a Dynamic Decision-Support Tool for Socio-Ecological System Resilience: Evidence from Integrated Flood and Tourism Management at Qalhat, Oman"
+@software{ADAAlbalushi2026FCMQalhat,
+  title   = "Fuzzy Cognitive Mapping as a Dynamic Decision-Support Tool for Socio-Ecological System Resilience: Evidence from Integrated Flood and Tourism Management at Qalhat, Oman"
 
 authors:
 
