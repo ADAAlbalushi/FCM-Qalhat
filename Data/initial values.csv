@@ -1,0 +1,36 @@
+Concept ID,Initial Value,Label
+C1,0.75,OUV
+C11,0.0,Precipitations
+C13,0.1,Temperature
+C14,0.1,Wind
+C15,0.0,Flooding
+C19,0.0,Wild plants
+C2,0.75,Physical fabric
+C20,0.0,Stray animals
+C21,0.0,Preservation & Conservation
+C22,0.5,Operational guidelines
+C23,0.25,Management Plan
+C25,0.5,Conflict between national government agencies
+C26,0.25,National government value
+C27,0.0,Protection/Mitigation strategies
+C28,0.0,Consolidation & Restoration
+C29,0.1,Monitoring activities
+C3,0.75,Site landscape
+C30,0.0,Excavation
+C31,0.1,Human Resources
+C34,0.25,Oil & gas extraction
+C35,0.0,Residential development
+C36,0.2,Accessibility
+C37,0.25,Tourism facilities
+C38,0.0,Urban sprawling & encroachment
+C39,0.0,Usage activities
+C4,0.5,Material type
+C40,0.0,Tourism
+C43,0.1,Locals activities
+C46,0.2,Community Value
+C47,0.0,Abandonment
+C49,0.0,Local income
+C5,1.0,Unfenced site
+C6,0.0,Sustainability
+C7,0.25,Budget
+C8,0.2,Erosion

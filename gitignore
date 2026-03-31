@@ -1,0 +1,51 @@
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs / Editors
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Temporary / cache files
+*.tmp
+*.temp
+.matplotlib/
+
+# RESULTS (exclude generated outputs)
+Results/
+Appendices/
+
+# DATA (INTENTIONALLY TRACKED)
+# Data/*.csv
+# Data/*.xlsx
+
+# Large compressed files (optional)
+*.zip
+*.tar
+*.gz

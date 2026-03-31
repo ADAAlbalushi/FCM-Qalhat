@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Fuzzy Cognitive Mapping as a Dynamic Decision-Support Tool for Socio-Ecological System Resilience: Evidence from Integrated Flood and Tourism Management at Qalhat, Oman"
+message: "If you use this software, please cite it as below."
+authors:
+ Amira D. Al-Balushi1,2*,    Frank O. Ostermann1,   Ellen-Wien Augustijn1,    Raúl Zurita-Milla1
+1 Geo-information Processing (GIP) Department, Geo-Information Science and Earth Observation (ITC) Faculty, University of Twente, Enschede, the Netherlands
+2 Geography Department, The College of Arts and Social Sciences, Sultan Qaboos University, Muscat, Oman
+
+     *Corresponding author E-mail: Amira D. Al-Balushi. a.d.a.albalushi@utwente.nl
+
+date-released: 2026-04-01
+version: "1.0.0"
+doi: "https://orcid.org/0009-0002-8188-6271"
+repository-code: "https://github.com/ADAAlbalushi/FCM-Qalhat"
+license: "MIT"

@@ -1,0 +1,51 @@
+Concept ID,Label,Full Name,Type
+C47,Abandonment,,Anthropogenic
+C36,Accessibility,,Anthropogenic
+C10,Acidity,,Natural
+C7,Budget,,Anthropogenic
+C48,"Pop-Change ",Change in local population and community/foreign labors,Anthropogenic
+C16,Climate changes,,Natural
+C46,ComV,Community Value,Anthropogenic
+C25,"Conflict ",Conflict between national government agencies,Anthropogenic
+C28,Con & Res,Consolidation & Restoration,Anthropogenic
+C41,Cultural activities,,Anthropogenic
+C18,Cyclones,,Natural
+C50,Damage,,Anthropogenic
+C33,Development,,Anthropogenic
+C9,Droughts,,Natural
+C17,Earthquakes,,Natural
+C8,Erosion,,Natural
+C30,Excavation,Archaeological research,Anthropogenic
+C45,Fire,,Anthropogenic
+C15,Flooding,,Natural
+C31,HR,Human Resources,Anthropogenic
+C12,Humidity,,Natural
+C24,LF,Legal Framework,Anthropogenic
+C49,Local income,Local income,Anthropogenic
+C43,LA,Locals activities,Anthropogenic
+C23,MP,Management Plan,Anthropogenic
+C4,Material type,,Anthropogenic
+C29,"Monitoring ",Monitoring activities,Anthropogenic
+C26,NGV,National government value,Anthropogenic
+C34,OGE,Oil & gas extraction,Anthropogenic
+C22,OG,Operational guidelines,Anthropogenic
+C1,OUV,,Anthropogenic
+C2,Phy-Fab,Physical fabric,Anthropogenic
+C44,Pollution,,Anthropogenic
+C11,Precipitations,,Natural
+C21,"Preservation ",Preservation & Conservation,Anthropogenic
+C27,Pro-Mit,Protection/Mitigation strategies,Anthropogenic
+C32,Rebuild,,Anthropogenic
+C42,Research,,Anthropogenic
+C35,ResDev,Residential development,Anthropogenic
+C3," landscape",Site landscape,Natural
+C20,Stray animals,,Natural
+C6,Sustainability,,Anthropogenic
+C13,Temperature,,Natural
+C40,Tourism,,Anthropogenic
+C37,TF,Tourism facilities,Anthropogenic
+C5,"Unfenced ",Unfenced site,Anthropogenic
+C38,US,Urban sprawling & encroachment,Anthropogenic
+C39,"Usage ",Usage activities,Anthropogenic
+C19,Wild plants,,Natural
+C14,Wind,,Natural
