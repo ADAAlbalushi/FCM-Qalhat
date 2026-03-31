@@ -13,7 +13,7 @@
 
 This repository contains the full reproducible code and data for the research article:
 
-> \\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*"Fuzzy Cognitive Mapping as a Dynamic Decision-Support Tool for Heritage Site Resilience: Evidence from Integrated Flood and Tourism Management at Qalhat, Oman"\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\*
+*"Fuzzy Cognitive Mapping as a Dynamic Decision-Support Tool for Heritage Site Resilience: Evidence from Integrated Flood and Tourism Management at Qalhat, Oman"*
 
 The study uses **Fuzzy Cognitive Maps (FCMs)** to model the socio-ecological system of Qalhat — a UNESCO World Heritage site — and simulate how flood events and overtourism affect the site's Outstanding Universal Value (OUV). Five management scenarios are tested, followed by sensitivity analysis and causal tracing to identify structural bottlenecks and bridge concepts within the system.
 
@@ -76,7 +76,7 @@ No external data sources are required.
 
 The analysis proceeds in three steps, each corresponding to one script:
 
-### Step 1 — Scenario Simulations (`01\\\\\\\\\\\\\\\_scenario\\\\\\\\\\\\\\\_analysis.py`)
+### Step 1 — Scenario Simulations (`01_scenario_analysis.py`)
 
 Baseline FCM behaviour is first established by running the model to convergence (threshold ε < 0.001, max 20 iterations) using Kosko's inference rule with a sigmoid transfer function (λ = 1.0). Five hypothetical scenarios are then simulated as single-shot interventions:
 
@@ -90,7 +90,7 @@ Baseline FCM behaviour is first established by running the model to convergence 
 
 Each scenario is evaluated by computing the percentage change in key outcome concepts (OUV, Physical Fabric, Site Landscape, Budget) relative to the baseline.
 
-### Step 2 — Sensitivity Analysis (`02\\\\\\\\\\\\\\\_sensitivity\\\\\\\\\\\\\\\_analysis.py`)
+### Step 2 — Sensitivity Analysis (`02_sensitivity_analysis.py`)
 
 Structural robustness is tested by re-running scenarios Fb, Tb, and FTb under three intervention intensity levels:
 
@@ -98,12 +98,12 @@ Structural robustness is tested by re-running scenarios Fb, Tb, and FTb under th
 
 This confirms that observed outcomes result from the causal pathways encoded in the FCM rather than simply from input magnitude. An additional comparison activates a key **bridge concept** (Usage Activity, C39) to evaluate its role as a structural lever.
 
-### Step 3 — Causal Tracing \& Bridge Concepts (`03\\\\\\\\\\\\\\\_causal\\\\\\\\\\\\\\\_tracing.py`)
+### Step 3 — Causal Tracing \& Bridge Concepts (`03_causal_tracing.py`)
 
 Using Kosko's fuzzy causal algebra, all indirect causal paths from **Flooding → Tourism** are traced. The total causal effect is computed as the maximum over all indirect path effects, where each path's strength equals its weakest edge (min–max logic):
 
-* **Indirect effect along path *l*:** `I\\\\\\\\\\\\\\\_l(Ci, Cj) = min{ e(Cp, Cp+1) : (p, p+1) ∈ l }`
-* **Total causal effect:** `T(Ci, Cj) = max{ I\\\\\\\\\\\\\\\_l(Ci, Cj) : 1 ≤ l ≤ m }`
+* **Indirect effect along path *l*:** `I_l(Ci, Cj) = min{ e(Cp, Cp+1) : (p, p+1) ∈ l }`
+* **Total causal effect:** `T(Ci, Cj) = max{ I_l(Ci, Cj) : 1 ≤ l ≤ m }`
 
 Bridge concepts — intermediate nodes on dominant causal paths — are identified and visualised as a directed network. Dormant bridge concepts act as structural barriers to intervention propagation.
 
@@ -124,7 +124,7 @@ Bridge concepts — intermediate nodes on dominant causal paths — are identifi
 1. **Clone the repository:**
 
 ```bash
-   git clone https://github.com/<your-username>/FCM-Qalhat.git
+   git clone https://github.com/<ADAAlbalushi>/FCM-Qalhat.git
    cd FCM-Qalhat
    ```
 
@@ -133,7 +133,7 @@ Bridge concepts — intermediate nodes on dominant causal paths — are identifi
 ```bash
    python -m venv venv
    source venv/bin/activate       # macOS/Linux
-   venv\\\\\\\\\\\\\\\\Scripts\\\\\\\\\\\\\\\\activate          # Windows
+   venv\Scripts\activate          # Windows
    ```
 
 3. **Install dependencies:**
@@ -155,16 +155,16 @@ Or install the key packages manually:
 Run the three scripts in order from your terminal:
 
 ```bash
-python Code/01\\\\\\\\\\\\\\\_scenario\\\\\\\\\\\\\\\_analysis.py
-python Code/02\\\\\\\\\\\\\\\_sensitivity\\\\\\\\\\\\\\\_analysis.py
-python Code/03\\\\\\\\\\\\\\\_causal\\\\\\\\\\\\\\\_tracing.py
+python Code/01_scenario_analysis.py
+python Code/02_sensitivity_analysis.py
+python Code/03_causal_tracing.py
 ```
 
 |Order|Script|Description|
 |-|-|-|
-|1|`01\\\\\\\\\\\\\\\_scenario\\\\\\\\\\\\\\\_analysis.py`|Baseline + 5 scenario simulations|
-|2|`02\\\\\\\\\\\\\\\_sensitivity\\\\\\\\\\\\\\\_analysis.py`|Sensitivity testing (weak / medium / strong)|
-|3|`03\\\\\\\\\\\\\\\_causal\\\\\\\\\\\\\\\_tracing.py`|Causal tracing and bridge concept visualisation|
+|1|`01_scenario_analysis.py`|Baseline + 5 scenario simulations|
+|2|`02_sensitivity_analysis.py`|Sensitivity testing (weak / medium / strong)|
+|3|`03_causal_tracing.py`|Causal tracing and bridge concept visualisation|
 
 Outputs (figures and CSV tables) are saved automatically to the `Results/` and `Appendices/` folders.
 
@@ -175,7 +175,7 @@ Outputs (figures and CSV tables) are saved automatically to the `Results/` and `
 |File|Description|
 |-|-|
 |`Aggregated participatory FCM.csv`|Square adjacency matrix of FCM edge weights (values in \[−1, 1]), rows = sources, columns = targets|
-|`initial values.csv`|Initial activation level (value in \[0, 1]) for each concept node in the baseline simulation|
+|`initial values.csv`|Initial activation level (value in \[0, 1]) for each concept node to excute the baseline simulation|
 |`Concept labels.csv`|Mapping of concept IDs (C1, C2, …) to full concept names used in the paper|
 
 \---
@@ -189,9 +189,9 @@ After running all scripts, the following outputs are generated:
 * Convergence plots and baseline activation table
 * Scenario comparison bar charts (% change vs. baseline)
 * Line plots of concept activation trajectories per scenario
-* `comparison\\\\\\\\\\\\\\\_table.csv` — tabular summary of all scenario outcomes
-* `final\\\\\\\\\\\\\\\_activation\\\\\\\\\\\\\\\_values\\\\\\\\\\\\\\\_table.csv` and `percentage\\\\\\\\\\\\\\\_change\\\\\\\\\\\\\\\_table.csv` — sensitivity results
-* `Flooding\\\\\\\\\\\\\\\_Tourism\\\\\\\\\\\\\\\_Network.png / .pdf` — publication figure of causal pathways
+* `comparison_table.csv` — tabular summary of all scenario outcomes
+* `final_activation_values_table.csv` and `percentage_change_table.csv` — sensitivity results
+* `Flooding_Tourism_Network.png / .pdf` — publication figure of causal pathways
 
 **Appendices/ folder:**
 
