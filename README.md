@@ -261,7 +261,7 @@ license: "MIT"
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this code with attribution.
+This project is licensed under the [MIT License](LICENSE.txt). You are free to use, modify, and distribute this code with attribution.
 
 \---
 
