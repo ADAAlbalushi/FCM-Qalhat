@@ -1,6 +1,6 @@
 # Fuzzy Cognitive Mapping for Heritage Site Resilience
 
-### *Dynamic Decision-Support for Integrated Flood and Tourism Management at Qalhat, Oman*
+### * A Dynamic Decision-Support for Integrated Flood and Tourism Management at Qalhat, Oman*
 
 [!\[Python](https://img.shields.io/badge/Python-3.8%2525252B-blue)](https://www.python.org/)
 [!\[License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
